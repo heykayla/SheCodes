@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+   body {
+       background: linear-gradient(#f0efef, #e9dcd7);
+       font-family: "Lato", Helvetica, sans-serif;
+   } 
+    h1 {
+        text-align: center;
+        color: #8A8B83;
+        font-size: 40px;
+        font-weight: lighter;
+    }
+    h2 {
+        text-align: center;
+        color: #C4A6A4;
+        font-size: 30px;
+        font-weight: lighter;
+    }
+    h3 {
+        text-align: center;
+        color: #9ba4a8;
+        border: 1px solid #cdccab;
+        padding: 30px;
+        font-size: 25px;
+        border-radius: 8px;
+        font-weight: lighter;
+    }
+
+    img {
+        display: block;
+        margin: 0 auto;
+        max-width: 50%;
+        border-radius: 10px;
+    }
+
+    p {
+      line-height: 1.5;
+      font-size: 16.5px;
+      margin: 20px 0 8px; 
+    }
+
+    ul {
+        text-align: center;
+       padding: 0;
+       list-style: none;
+    }
+
+    li {
+        margin: 0 auto; 
+    }
+
+    button {
+        display: block;
+        margin: 0 auto;
+        background: #b4b4ab;
+        color: white;
+        font-size: 15px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 8px;
+        margin: 20px auto;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+    }
+
+    button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+    }
+
+    .Wikipedia {
+        text-decoration: none;
+        color: #9ba4a8;
+    }
+
+    .Wikipedia:hover {
+        text-decoration: underline;
+    }
+
+    .footer {
+      text-align: center;  
+    }
+
+    .content {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px 50px;
+    }
+</style>
+</head>
+<body>
+    <div class="content">
+   <h1>
+       What I'm Passionate About: Dogs
+   </h1>
+   <h2>
+       Specifically, my dog Rio!
+   </h2>
+   <hr />
+   <p>
+       I do not have many things that I am passionate about, but there is one thing that I love more than life and that is my <strong>2 year-old cavapoo pup named Rio</strong>.
+    </p>
+    <img src="https://welovedoodles.com/wp-content/uploads/2020/11/tan-cavapoo-300x300.jpg" alt="Cavapoo dog laying on the floor"/>
+    <h3>
+        What Rio Loves
+    </h3>
+       <ul>
+           <li>
+               🥰 His mommy (aka me)
+            </li>
+            <li> 
+               🎾 Green ball
+            </li>
+            <li>
+               😈 Being mischevious
+            </li>
+            <li>
+               🤍 Giving and receiving lots and lots of kisses
+            </li>
+            <li>
+               🛏 Fluffy things to lay on
+           </li>
+           <li>
+               📺 Watching Scooby-Dooby-Doo on Netflix (yes, I'm being serious)
+           </li>
+           <li>
+               🤗 Snuggles 
+           </li>
+       </ul>
+    <h3>
+        What Rio Hates
+    </h3>
+        <ul>
+            <li>
+                ☹️ Being home alone
+            </li>
+            <li>
+                🧼 Baths
+            </li>
+            <li>
+                🩺 Vet visits 
+            </li>
+            <li>
+                💤 Sleeping alone
+            </li>
+            <li>
+                💔 Being a part from his family 
+            </li>
+        </ul>
+    <p>
+        Although I was unable to upload an actual image of him, just look at them, they are irrestibly cute. If you ever want a forever furry friend, adopt a cavapoo. Trust me, you won't regret it. 
+    </p>
+    <img src="https://res-3.cloudinary.com/embark/image/upload/a_0,b_auto,c_pad,h_650,q_auto,w_766/v1/ui/xgnozpebkwqkuedha0o1" alt="Cavapoo dog laying on the bed"/>
+    <p>
+        In case you want to <strong>learn more about the cavapoo breed</strong>, here's a little excerpt from <a href="https://simple.wikipedia.org/wiki/Cavapoo#:~:text=The%20Cavapoo%20dog%20breed%20is,from%20both%20of%20their%20parents." target="_blank" class="Wikipedia">
+        Wikipedia</a>:
+    </p>
+    <p>
+        <blockquote><i>The Cavapoo dog breed is a mixed breed between two dogs: the Poodle and the Cavalier King Charles Spaniel. They go by
+        different names as well. Two are Cavadoodle and Cavoodle. They inherit the traits from both of their parents. They are
+        usually very <span>playful, curious, not too active, friendly, and cute</span>!</i></blockquote>
+    </p>
+    <p>
+        <strong>Are you interested in adopting a cavapoo? Click the button 👇 to be added to our waiting list.</strong>
+    </p>
+    <button>
+        Cavapoo Adoption List 
+    </button>
+    <p class="footer">
+        Coded by Kayla Morales
+    </p>
+    </div>
+    <script>
+      function list() {
+          let name = prompt("What is your name? 🤔");
+          let email = prompt("What is your email? 💌")
+          let age = prompt("How old are you? 🎂")
+          if (age >= 18) {
+              alert("You can adopt a 🐶! We'll be sending you an email momentarily with additonal information. 💜");
+          } else {
+              if (age < 18)
+                  alert("Sorry, you do not meet the age requirement. 😭 💔");
+          } 
+      }
+      
+      let button = document.querySelector("button");
+      button.addEventListener("click", list);
+    </script>
+</body>
+</html>
